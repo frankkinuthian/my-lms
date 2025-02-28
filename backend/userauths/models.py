@@ -20,6 +20,8 @@ class User(AbstractUser):
     full_name = models.CharField(max_length=MAX_NAME_LENGTH)
     # Field to store the OTP (One-Time Password) for additional security, can be null or blank.
     otp = models.CharField(max_length=OTP_LENGTH, null=True, blank=True)
+    # Refresh token for additional security
+    refresh_token = models.CharField(max_length=1000, null=True, blank=True)
 
     # Set email as the main field for authentication instead of the default username.
     USERNAME_FIELD = 'email'
