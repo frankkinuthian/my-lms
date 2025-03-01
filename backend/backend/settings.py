@@ -56,7 +56,8 @@ INSTALLED_APPS = [
     "anymail",
     "storages", 
     "django_ckeditor_5",
-    
+    "drf_yasg",
+
 ]
 
 MIDDLEWARE = [
