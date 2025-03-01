@@ -1,2 +1,76 @@
-venv
+# General
+*.log
+*.pot
+*.pyc
+*.pyo
+*.swp
+*.swo
+*.sublime-project
+*.sublime-workspace
+
+# Virtual environment
+venv/
 .env
+.envrc
+*.venv
+
+# Django specific
+__pycache__/
+db.sqlite3
+/media/
+/static/
+/local_settings.py
+
+# Migrations
+**/migrations/*.pyc
+**/migrations/*.pyo
+**/migrations/__pycache__/
+
+# IDEs and Editors
+.vscode/
+.idea/
+*.iml
+
+# PyCharm specific
+*.pyc
+*.pyo
+.idea/
+*.xml
+*.name
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+
+# Coverage reports
+htmlcov/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+
+# Testing
+.tox/
+.nox/
+.pytest_cache/
+
+# Static & Media files
+/staticfiles/
+/mediafiles/
+
+# Docker
+*.pid
+*.log
+docker-compose.override.yml
+
+# Pipenv
+Pipfile.lock
+
+# Celery
+celerybeat-schedule
+
+# Other
+local_settings.py
+.envrc
+*.DS_Store
+Thumbs.db
